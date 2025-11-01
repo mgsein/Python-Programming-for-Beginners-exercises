@@ -1,0 +1,11 @@
+>>> print("Hi there!")
+
+>>> message='Hi there!'
+>>> print(message)
+
+>>>print("She said, "Unbelievable!" to him")
+>>> SyntaxError: invalid syntax
+
+>>> print('She said, "Unbelievable!" to him')
+
+>>> print("Let's get started")
