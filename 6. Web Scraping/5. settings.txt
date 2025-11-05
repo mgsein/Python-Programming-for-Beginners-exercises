@@ -1,0 +1,27 @@
+>>> scrapy runspider wikipedia.py -o articles.csv -t csv -s CLOSESPIDER_PAGECOUNT=10
+
+settings.py
+CLOSESPIDER_PAGECOUNT = 10
+>>> scrapy runspider wikipedia.py -o articles.csv -t csv
+
+
+>>> scrapy runspider wikipedia.py -s FEED_URI=articles.csv -s FEED_FORMAT=csv
+
+settings.py(for csv format)
+FEED_URI='articles.csv'
+FEED_FORMAT='csv'
+>>> scrapy runspider wikipedia.py
+
+(for json format)
+FEED_URI='articles.json'
+FEED_FORMAT='json'
+>>> scrapy runspider wikipedia.py
+>>> cat articles.json
+
+
+wikipedia.py
+custom_settings={
+        'FEED_URI': 'articles.xml',
+        'FEED_FORMAT': 'xml'
+    }
+>>> scrapy runspider wikipedia.py

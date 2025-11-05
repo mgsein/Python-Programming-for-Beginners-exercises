@@ -1,0 +1,11 @@
+https://pythonscraping.com/linkedin/form.html
+
+>>> scrapy genspider get_form pythonscraping.com
+
+get_form.py
+>>> scrapy runspider get_form.py
+
+
+https://pythonscraping.com/linkedin/form2.html
+post_form.py
+>>> scrapy runspider post_form.py

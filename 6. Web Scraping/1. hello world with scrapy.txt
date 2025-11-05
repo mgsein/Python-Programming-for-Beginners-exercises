@@ -1,0 +1,41 @@
+>>> pip install Scrapy
+
+>>> scrapy --help
+
+https://pythonscraping.com/linkedin/ietf.html
+
+>>> scrapy startproject ietf_scraper
+
+
+scrapy.cfg => configuration
+items.py   => defines the objects or the entities that we're scraping
+middlwares => contain various scrapy hooks
+pipelines  => defined functions that create and filter items
+settings   => contains project settings
+spiders    => this is what we're going to focus on right now.
+
+
+>>> cd .\ietf_scraper\ietf_scraper\spiders\
+>>> scrapy genspider ietf pythonscraping.com
+
+go to 1.ietf.py
+
+>>> scrapy runspider ietf.py
+
+-----------------------------------------------------------------------------
+
+Why xpath more powerful than css?
+
+/html/body/div/h1
+
+//h1
+
+//div/h1
+
+//div//h1
+
+//span[@class="title"]/text()
+
+//span[@class="title"]/@id
+
+

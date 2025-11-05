@@ -1,0 +1,13 @@
+https://en.wikipedia.org/wiki/Myanmar
+
+https://www.mediawiki.org/wiki/API:Main_page
+
+>>> scrapy startproject article_crawler
+
+>>> cd .\article_crawler\article_crawler\spiders\
+
+>>> scrapy genspider wikipedia en.wikipedia.org
+
+go to wikipedia.py
+
+>>> scrapy runspider wikipedia.py

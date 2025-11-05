@@ -1,0 +1,9 @@
+go to items.py
+
+go to wikipedia.py
+
+
+>>> scrapy runspider wikipedia.py -o articles.csv -s CLOSESPIDER_PAGECOUNT=20
+
+
+optional => -t json, -t xml
