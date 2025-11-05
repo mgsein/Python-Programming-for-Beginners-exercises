@@ -1,0 +1,9 @@
+>>> python -m pytest tests
+
+>>> python -m pytest stuff
+
+>>> python -m pytest tests/test_accum.py
+
+>>> python -m pytest tests/test_math.py::test_one_plus_one
+
+>>> python -m pytest -m math

@@ -1,0 +1,10 @@
+>>> python -m pytest --help
+
+def test_one_plus_one():
+  assert 1 + 1 == 0
+
+>>> python -m pytest
+>>> python -m pytest --verbose (show pass and fail)
+>>> python -m pytest --quiet (opposite of verbose)
+>>> python -m pytest --exitfirst (exit after first fail)
+>>> python -m pytest --maxfail=1 (stop running tests after a certain number of failures)

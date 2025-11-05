@@ -1,0 +1,10 @@
+>>> pip install requests
+
+/* pytest.ini */
+[pytest]
+markers =
+    duckduckgo
+    rest_api
+testpaths = tests
+
+>>> python -m pytest -m rest_api

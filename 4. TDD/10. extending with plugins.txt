@@ -1,0 +1,9 @@
+>>> pip install pytest-html
+python -m pytest --html=report.html
+
+>>> pip install pytest-cov
+python -m pytest --cov=stuffs
+python -m pytest --cov=stuffs --cov-report html
+
+>>> pip install pytest-xdist
+python -m pytest -n 3
