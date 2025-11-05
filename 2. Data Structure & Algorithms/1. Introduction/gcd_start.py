@@ -1,0 +1,9 @@
+# Find the greatest common denominator of two numbers
+# Using Euclid's algorithm
+
+def gcd(a, b):
+    pass
+
+# try out the function with a few examples
+print(gcd(60, 96)) # should be 12
+print(gcd(20, 8))  # should be 4
